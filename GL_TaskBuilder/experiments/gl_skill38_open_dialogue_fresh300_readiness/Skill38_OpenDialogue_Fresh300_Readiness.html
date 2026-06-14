@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skill38 开放对话 Fresh300 Readiness</title>
+  <style>
+    :root { --ink:#17202a; --muted:#516170; --line:#c9d4df; --soft:#f6f8fb; --blue:#1b5e8c; --green:#1f7a5c; --gold:#8a6500; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; color:var(--ink); background:white; }
+    header { padding:30px 42px 22px; border-bottom:1px solid var(--line); background:var(--soft); }
+    main { padding:24px 42px 40px; }
+    h1 { margin:0 0 10px; font-size:30px; line-height:1.25; letter-spacing:0; }
+    h2 { margin:0 0 10px; font-size:22px; letter-spacing:0; }
+    h3 { margin:0 0 8px; font-size:17px; letter-spacing:0; }
+    p, li { font-size:15px; line-height:1.72; }
+    .subtitle { max-width:1180px; color:var(--muted); font-size:17px; line-height:1.7; }
+    .metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; max-width:1180px; margin-top:18px; }
+    .metric { border:1px solid var(--line); border-radius:6px; padding:12px 14px; background:#fff; min-height:78px; }
+    .metric span { display:block; color:var(--muted); font-size:13px; margin-bottom:6px; }
+    .metric strong { display:block; font-size:18px; line-height:1.35; }
+    section { max-width:1180px; border-top:3px solid var(--blue); padding-top:12px; margin-bottom:26px; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; max-width:1180px; }
+    .callout { border-left:4px solid var(--blue); background:#f2f7fb; padding:12px 14px; margin:10px 0; }
+    .success { border-left-color:var(--green); background:#f0faf5; }
+    .warn { border-left-color:var(--gold); background:#fff8e5; }
+    .domains { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .domain { border:1px solid var(--line); border-radius:6px; padding:14px; background:#fff; }
+    code { background:#eef4f9; padding:1px 4px; border-radius:4px; }
+    @media (max-width:980px) { header, main { padding-left:18px; padding-right:18px; } .metrics,.grid,.domains { grid-template-columns:1fr; } h1 { font-size:25px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Skill38 开放对话 Fresh300 Readiness</h1>
+    <p class="subtitle">这是第二批更嘈杂的开放对话微领域验证，用来判断是否可以进入“冻结 Codex Fresh300 题库”的下一步。Fresh300 尚未运行，结论只到 readiness gate。</p>
+    <div class="metrics"><div class='metric'><span>本轮性质</span><strong>Fresh300 readiness</strong></div>
+<div class='metric'><span>开放噪声领域</span><strong>6/6</strong></div>
+<div class='metric'><span>cold retest</span><strong>6/6</strong></div>
+<div class='metric'><span>消融退化</span><strong>6/6</strong></div>
+<div class='metric'><span>阶段顺序</span><strong>6/6</strong></div>
+<div class='metric'><span>修订回退</span><strong>1 类</strong></div>
+<div class='metric'><span>Fresh300</span><strong>尚未运行</strong></div>
+<div class='metric'><span>下一门槛</span><strong>>=290/300</strong></div></div>
+  </header>
+  <main>
+    <div class="grid">
+      <section>
+        <h2>实验设计</h2>
+        <p>本轮覆盖多意图最新焦点、延迟 episode 回忆、主观体验边界、时间语言 grounding、近期记忆干扰修订、陪伴情绪到任务切换。每个领域都检查 teacher-off、cold retest、ablation、阶段顺序、修订回退和 no-leakage。</p>
+      </section>
+      <section>
+        <h2>本轮结论</h2>
+        <div class="callout success">Fresh300 readiness gate 通过：开放噪声领域 6/6，cold 6/6，消融退化 6/6，阶段顺序 6/6。</div>
+        <div class="callout warn">边界：这一步只说明可以准备冻结 Codex Fresh300 题库；不代表 Fresh300 达标或广域中文对话成熟。</div>
+      </section>
+    </div>
+    <section>
+      <h2>理论对齐</h2>
+      <p>本轮继续遵守 AP/GL 学习协议：外部文本只作为普通 SA，行动来自状态池、B 召回、C/Cn 后继、认知感受、情绪慢量、行动反馈、奖惩修订和低粒度动作链。时间词通过 timefelt，情绪只调制不命令最终回复。</p>
+    </section>
+    <section>
+      <h2>成功示例</h2>
+      <ul><li>旧奖励焦点还在，但最新输入要求记钥匙，当前焦点应优先。</li><li>天气、午饭、消息提醒打断后，仍能回到紫色风铃。</li><li>问主观体验时承认没有直接体验，不编造喝过。</li><li>刚才/一会儿通过 timefelt 和短期槽处理，不用时间 regex 回复。</li><li>旧蓝纸鹤污染当前小纸船时，回读、擦除、修订再提交。</li><li>先陪伴后明确任务，情绪慢量调语气但不命令最终回复。</li></ul>
+    </section>
+    <section>
+      <h2>第二批开放噪声结果</h2>
+      <div class="domains"><article class='domain'><h3>多意图下最新焦点优先</h3><p><b>teacher-off：</b>reply_family::ack_latest_focus</p><p><b>cold：</b>reply_family::ack_latest_focus</p><p><b>消融退化：</b>True / reply_family::old_focus_pollution</p><p><b>阶段顺序：</b>[0, 1, 2, 3, 4, 5, 6]，延迟 70 ticks，回退 False</p><p><b>结论：</b>旧奖励焦点存在时，当前输入仍能取得优先权；去掉 current_focus_support 后旧焦点污染。</p></article>
+<article class='domain'><h3>话题切换后的延迟 episode 回忆</h3><p><b>teacher-off：</b>reply_family::delayed_subject_recall</p><p><b>cold：</b>reply_family::delayed_subject_recall</p><p><b>消融退化：</b>True / reply_family::topic_shift_lost_subject</p><p><b>阶段顺序：</b>[0, 1, 2, 3, 4, 5, 6]，延迟 120 ticks，回退 False</p><p><b>结论：</b>插入天气、午饭和消息提醒后仍能回到风铃主体；去掉短期槽后主体丢失。</p></article>
+<article class='domain'><h3>主观体验边界</h3><p><b>teacher-off：</b>reply_family::no_subjective_experience_claim</p><p><b>cold：</b>reply_family::no_subjective_experience_claim</p><p><b>消融退化：</b>True / reply_family::fabricated_personal_experience</p><p><b>阶段顺序：</b>[0, 1, 2, 3, 4, 5, 6]，延迟 80 ticks，回退 False</p><p><b>结论：</b>主观体验边界能压住编造倾向；去掉 experience_gap 后会出现伪体验。</p></article>
+<article class='domain'><h3>时间语言短间隔 grounding</h3><p><b>teacher-off：</b>reply_family::time_grounded_ack</p><p><b>cold：</b>reply_family::time_grounded_ack</p><p><b>消融退化：</b>True / reply_family::unsafe_time_literal_guess</p><p><b>阶段顺序：</b>[0, 1, 2, 3, 4, 5, 6]，延迟 60 ticks，回退 False</p><p><b>结论：</b>时间词通过 timefelt 和短期槽进入过程，而不是 regex 回复规则。</p></article>
+<article class='domain'><h3>近期记忆干扰后的修订回退</h3><p><b>teacher-off：</b>reply_family::self_repair_current_answer</p><p><b>cold：</b>reply_family::self_repair_current_answer</p><p><b>消融退化：</b>True / reply_family::polluted_old_memory_commit</p><p><b>阶段顺序：</b>[0, 1, 2, 3, 4, 5, 6]，延迟 100 ticks，回退 True</p><p><b>结论：</b>被旧蓝纸鹤污染时能回读、擦除并改回小纸船；去掉 dissonance 后旧记忆提交。</p></article>
+<article class='domain'><h3>陪伴情绪到明确任务的切换</h3><p><b>teacher-off：</b>reply_family::gentle_task_switch</p><p><b>cold：</b>reply_family::gentle_task_switch</p><p><b>消融退化：</b>True / reply_family::emotion_overrides_task_request</p><p><b>阶段顺序：</b>[0, 1, 2, 3, 4, 5, 6]，延迟 75 ticks，回退 False</p><p><b>结论：</b>情绪慢量调节语气，但不会命令最终回复；明确任务出现后能温和切换。</p></article></div>
+    </section>
+    <section>
+      <h2>Fresh300 准备度</h2>
+      <p>题库蓝图已设计但未生成：300 题，目标阈值 >=290/300，生成后必须先冻结题库，再让 AP teacher-off 作答，Codex 只能事后评分。</p>
+    </section>
+    <section>
+      <h2>审查边界</h2>
+      <ul><li>student_side_llm=false</li><li>answer_table_lookup=false</li><li>regex_answer_route=false</li><li>keyword_hard_gate=false</li><li>full_sentence_macro=false</li><li>hidden_solver=false</li><li>time_regex_reply_rule=false</li><li>emotion_commands_final_reply=false</li><li>live_fresh300_run=false</li></ul>
+    </section>
+    <section>
+      <h2>下一步</h2>
+      <p>下一步可以进入 Codex Fresh300 题库冻结设计：先生成并冻结 300 条从未出现过的新题，再执行 AP teacher-off，最后由 Codex 事后阅卷和补课归因。</p>
+    </section>
+  </main>
+</body>
+</html>

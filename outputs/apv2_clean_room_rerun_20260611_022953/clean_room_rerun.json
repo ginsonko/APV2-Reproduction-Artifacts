@@ -1,0 +1,48 @@
+{
+  "schema_id": "apv2_same_machine_clean_room_rerun/v1",
+  "created_at_utc": "2026-06-10T18:30:14.350027+00:00",
+  "scope": "AP-Core architecture/runtime main-paper reproducibility candidate",
+  "rerun_level": "same_machine_clean_room_staging_copy",
+  "source_manifest": "outputs\\apv2_public_freeze_candidate_20260611_022942\\package\\public_freeze_manifest.json",
+  "source_package": "outputs\\apv2_public_freeze_candidate_20260611_022942\\package",
+  "staging_root": "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\apv2_clean_room_rerun_20260611_022953\\stage",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "machine": "AMD64"
+  },
+  "commands": [
+    {
+      "command": "python scripts\\check_apv2_mainpaper_runtime_draft.py",
+      "returncode": 0,
+      "duration_seconds": 0.185,
+      "stdout_tail": "APV2 mainpaper draft check: PASS\nchecked: H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\apv2_clean_room_rerun_20260611_022953\\stage\\docs\\APV2_MainPaper_ArchitectureRuntime_Draft_20260611.md\nchars: 26175\n",
+      "stderr_tail": "",
+      "passed": true
+    },
+    {
+      "command": "python -m pytest tests\\test_apv2_publication_figures_supplement.py tests\\test_apv2_bottom_loop_p0_materials.py tests\\test_apv2_p1_hardening_materials.py tests\\test_apv2_p2_stress_mechanism_evidence.py tests\\test_apv2_public_freeze_clean_room.py -q",
+      "returncode": 0,
+      "duration_seconds": 19.903,
+      "stdout_tail": ".................                                                        [100%]\n============================== warnings summary ===============================\nlegacy_apv2\\sensors\\hearing_sensor_v1.py:5\n  H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\apv2_clean_room_rerun_20260611_022953\\stage\\legacy_apv2\\sensors\\hearing_sensor_v1.py:5: DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13\n    import audioop\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n17 passed, 1 warning in 18.19s\n",
+      "stderr_tail": "",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "command_count": 2,
+    "passed": 2,
+    "failed": 0,
+    "all_passed": true
+  },
+  "boundary": {
+    "same_machine_rerun": true,
+    "independent_clean_machine_claim": false,
+    "third_party_replication_claim": false
+  },
+  "artifacts": {
+    "json_path": "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\apv2_clean_room_rerun_20260611_022953\\clean_room_rerun.json",
+    "report_path": "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\apv2_clean_room_rerun_20260611_022953\\clean_room_rerun_report.md",
+    "output_dir": "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\apv2_clean_room_rerun_20260611_022953"
+  }
+}

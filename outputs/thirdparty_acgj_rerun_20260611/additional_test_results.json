@@ -1,0 +1,22 @@
+﻿[
+    {
+        "name":  "cargo_test_lib",
+        "exit_code":  0,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_test_lib.log"
+    },
+    {
+        "name":  "cargo_test_tests",
+        "exit_code":  101,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_test_tests.log"
+    },
+    {
+        "name":  "cargo_check",
+        "exit_code":  0,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_check.log"
+    },
+    {
+        "name":  "cargo_fmt_check",
+        "exit_code":  1,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_fmt_check.log"
+    }
+]

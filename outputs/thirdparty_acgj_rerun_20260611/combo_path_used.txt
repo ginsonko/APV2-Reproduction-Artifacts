@@ -1,0 +1,9 @@
+﻿combo=C:\Users\ADMINI~1\AppData\Local\Temp\ap_acgj_rust_gnu_combo_bin
+gcc=C:\Users\Administrator\AppData\Local\Temp\ap_acgj_rust_gnu_combo_bin\x86_64-w64-mingw32-gcc.exe
+
+dlltool=C:\Users\Administrator\AppData\Local\Temp\ap_acgj_rust_gnu_combo_bin\dlltool.exe
+
+as=C:\Users\Administrator\AppData\Local\Temp\ap_acgj_rust_gnu_combo_bin\x86_64-w64-mingw32-as.exe
+
+ld=C:\Users\Administrator\AppData\Local\Temp\ap_acgj_rust_gnu_combo_bin\ld.exe
+

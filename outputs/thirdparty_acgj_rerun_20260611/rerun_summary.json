@@ -1,0 +1,53 @@
+﻿{
+    "rerun_date":  "2026-06-11",
+    "evidence_status":  "local core rerun completed with bounded caveats",
+    "repo_commit":  "ccb68aea6291c7e9ed507d5f576803bd99f65f5d",
+    "repo_remote":  "https://github.com/ACG-j/artificial_psyarch.git",
+    "submitted_ap_zip_sha256":  "051589554123405652740729A02D5BD5A2B00EADDFA425AE2007BAC1EEAE7679",
+    "rust":  {
+                 "rustup":  "rustup 1.29.0 (28d1352db 2026-03-05)",
+                 "host":  "x86_64-pc-windows-gnu",
+                 "cargo":  "cargo 1.96.0 (30a34c682 2026-05-25)",
+                 "llvm_mingw":  "MartinStorsjo.LLVM-MinGW.MSVCRT 22.1.7-20260602",
+                 "rustc":  "rustc 1.96.0 (ac68faa20 2026-05-25)"
+             },
+    "commands":  {
+                     "paper_key_suite":  "passed",
+                     "cargo_test_lib":  "passed: 84/84",
+                     "ap_status_report":  "passed",
+                     "cargo_clippy_all_targets_all_features_D_warnings":  "passed",
+                     "clean_source_relation_word_report":  "expected fail: relation curriculum/media artifact not present",
+                     "cargo_fmt_check":  "passed",
+                     "clean_source_paper_key_suite":  "passed",
+                     "cargo_test_all":  "compiled and mostly passed; one Windows path separator assertion failed in relation_word_report bin test",
+                     "generated_math_report":  "passed",
+                     "cargo_check":  "passed",
+                     "clean_source_generated_math_report":  "passed",
+                     "clean_source_ap_status_report":  "passed",
+                     "relation_word_report_with_submitted_ap_artifact":  "passed"
+                 },
+    "metrics":  {
+                    "relation_words":  {
+                                           "teacher_off_clean":  true,
+                                           "control_geometry_only_accuracy":  1.0,
+                                           "holdout_audit_passed":  true,
+                                           "control_shuffled_expected_accuracy":  0.0,
+                                           "image_refs":  24,
+                                           "holdout_probe_accuracy":  1.0,
+                                           "control_no_geometry_accuracy":  0.0,
+                                           "teacher_off_accuracy":  1.0,
+                                           "reload_probe_accuracy":  1.0,
+                                           "steps":  24,
+                                           "audit_passed":  true,
+                                           "unique_image_refs":  24,
+                                           "cold_retest_accuracy":  1.0,
+                                           "cold_retest_clean":  true
+                                       }
+                },
+    "logs_dir":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611",
+    "caveats":  [
+                    "Windows GNU build required pure ASCII temp path and explicit linker/binutils PATH setup.",
+                    "cargo test all has one path separator assertion failure in src/bin/relation_word_report.rs; core lib tests and report commands pass.",
+                    "relation_word_report requires the external .ap curriculum/media artifact; clean source without .ap correctly cannot run that report."
+                ]
+}

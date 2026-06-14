@@ -1,0 +1,12 @@
+﻿[
+    {
+        "name":  "cargo_fmt_check_after_component",
+        "exit_code":  0,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_fmt_check_after_component.log"
+    },
+    {
+        "name":  "cargo_clippy_all",
+        "exit_code":  0,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_clippy_all.log"
+    }
+]

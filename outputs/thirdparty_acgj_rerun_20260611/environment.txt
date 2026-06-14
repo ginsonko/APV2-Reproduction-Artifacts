@@ -1,0 +1,23 @@
+﻿rerun_date=2026-06-11
+cwd=H:\AP原型实验第二期\APV2.1版本原型测试
+repo_commit=ccb68aea6291c7e9ed507d5f576803bd99f65f5d
+repo_remote=https://github.com/ACG-j/artificial_psyarch.git
+ap_zip_sha256=051589554123405652740729A02D5BD5A2B00EADDFA425AE2007BAC1EEAE7679
+rustup=rustup 1.29.0 (28d1352db 2026-03-05)
+rustc=rustc 1.96.0 (ac68faa20 2026-05-25)
+cargo=cargo 1.96.0 (30a34c682 2026-05-25)
+rustup_show=
+Default host: x86_64-pc-windows-gnu
+rustup home:  C:\Users\Administrator\.rustup
+
+installed toolchains
+--------------------
+stable-x86_64-pc-windows-gnu (active, default)
+
+active toolchain
+----------------
+name: stable-x86_64-pc-windows-gnu
+active because: it's the default toolchain
+installed targets:
+  x86_64-pc-windows-gnu
+

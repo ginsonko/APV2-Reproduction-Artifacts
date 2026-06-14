@@ -1,0 +1,22 @@
+﻿[
+    {
+        "name":  "clean_generated_math_report",
+        "exit_code":  0,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_run_clean_generated_math_report.log"
+    },
+    {
+        "name":  "clean_relation_word_report",
+        "exit_code":  1,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_run_clean_relation_word_report.log"
+    },
+    {
+        "name":  "clean_paper_key_suite",
+        "exit_code":  0,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_run_clean_paper_key_suite.log"
+    },
+    {
+        "name":  "clean_ap_status_report",
+        "exit_code":  0,
+        "log":  "H:\\AP原型实验第二期\\APV2.1版本原型测试\\outputs\\thirdparty_acgj_rerun_20260611\\cargo_run_clean_ap_status_report.log"
+    }
+]

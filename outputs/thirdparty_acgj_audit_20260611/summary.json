@@ -1,0 +1,96 @@
+{
+  "audit_date": "2026-06-11",
+  "subject": "ACG-j/artificial_psyarch third-party AP-inspired artifact audit",
+  "repo": {
+    "local_path": "tmp_thirdparty_audit/artificial_psyarch",
+    "remote": "https://github.com/ACG-j/artificial_psyarch.git",
+    "commit": "ccb68aea6291c7e9ed507d5f576803bd99f65f5d",
+    "commit_author": "ation_ciger <ation_ciger@sgxi.cn>",
+    "commit_date": "2026-06-11T00:27:40+08:00",
+    "commit_subject": "Add relation scene probe runtime",
+    "language": "Rust",
+    "rust_edition": "2024",
+    "license": "GPL-3.0",
+    "description": "Clean-room Rust AP-Core minimal prototype inspired by the APV2.1 paper."
+  },
+  "artifact": {
+    "archive_path": ".ap.zip",
+    "sha256": "051589554123405652740729A02D5BD5A2B00EADDFA425AE2007BAC1EEAE7679",
+    "extracted_path": "tmp_thirdparty_audit/acg_j_ap_zip_20260611/.ap",
+    "file_count": 63,
+    "total_bytes": 673526,
+    "extension_counts": {
+      ".json": 9,
+      ".apbin": 4,
+      ".svg": 48,
+      ".md": 2
+    }
+  },
+  "reported_metrics": {
+    "status_report": {
+      "status": "PASS",
+      "generated_math_train_accuracy": 1.0,
+      "generated_math_holdout_accuracy": 1.0,
+      "generated_math_generalization_accuracy": 1.0,
+      "teacher_off_taint_audit": "PASS",
+      "experiment_count": 13,
+      "event_count": 1000,
+      "holdouts_passed": true,
+      "validation_errors": 0,
+      "suite_count": 8,
+      "passed_suites": 8,
+      "claim_count": 8
+    },
+    "generated_math": {
+      "status": "PASS",
+      "closed_loop": true,
+      "train_tasks": 89,
+      "memory_rows": 89,
+      "train_accuracy": 1.0,
+      "teacher_off_holdout_accuracy": 1.0,
+      "teacher_off_generalization_accuracy": 1.0,
+      "skill_reload_generalization_accuracy": 1.0,
+      "untrained_operator_accuracy": 0.0,
+      "taint_audit": "PASS"
+    },
+    "relation_words": {
+      "skill_id": "skill.relation.spatial_words.zh.v1",
+      "domain": "relation_words",
+      "steps": 24,
+      "image_refs": 24,
+      "unique_image_refs": 24,
+      "audit_passed": true,
+      "holdout_audit_passed": true,
+      "teacher_off_accuracy": 1.0,
+      "cold_retest_accuracy": 1.0,
+      "teacher_off_clean": true,
+      "cold_retest_clean": true,
+      "reload_probe_accuracy": 1.0,
+      "reload_probe_clean": true,
+      "holdout_probe_accuracy": 1.0,
+      "holdout_probe_clean": true,
+      "control_geometry_only_accuracy": 1.0,
+      "control_no_geometry_accuracy": 0.0,
+      "control_shuffled_expected_accuracy": 0.0
+    }
+  },
+  "local_rerun": {
+    "attempted": false,
+    "reason": "cargo was not available in PATH on this machine"
+  },
+  "judgment": {
+    "preliminary_evidence_value": "strong candidate third-party clean-room AP-principle reproduction evidence",
+    "formal_reproduction_status": "pending",
+    "positive_claim": "Artifact and source inspection support bounded AP-style learning-loop reproduction including teacher-off holdout, cold retest, skill reload, generated arithmetic generalization, relation-word geometry learning, and no-leakage/control probes.",
+    "boundary": "Not yet a locally rerun third-party reproduction proof, not APV2 full runtime reproduction, and not open-world dialogue proof."
+  },
+  "needed_next": [
+    "author permission to cite",
+    "frozen tag or release archive",
+    "confirmation that .ap.zip was generated from the cited commit",
+    "raw cargo command logs",
+    "environment information",
+    "no-secret/no-provider/no-student-side-LLM statement",
+    "clean-machine rerun"
+  ]
+}
