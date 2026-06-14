@@ -6,7 +6,7 @@ This repository anchors APV2 release artifacts: frozen experiment outputs, manif
 
 ## 发布锚点 / Release Anchors
 
-- Official release tag: `apv2-release-20260614-final`
+- Official release tag: `apv2-release-20260614-final-cn-pdf`
 - Repository manifest: `PUBLIC_STAGING_MANIFEST.json`
 - Word release manifest: `paper_artifacts/release_20260614/release_manifest_20260614.json`
 - Third-party reference: `https://github.com/ACG-j/artificial_psyarch`
