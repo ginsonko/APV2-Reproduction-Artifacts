@@ -6,14 +6,14 @@ This repository anchors APV2 release artifacts: frozen experiment outputs, manif
 
 ## 发布锚点 / Release Anchors
 
-- Official release tag: `apv2-release-20260614-final-cn-pdf`
+- Official release tag: `apv2-release-20260614-final-longreport`
 - Repository manifest: `PUBLIC_STAGING_MANIFEST.json`
 - Word release manifest: `paper_artifacts/release_20260614/release_manifest_20260614.json`
 - Third-party reference: `https://github.com/ACG-j/artificial_psyarch`
 
 ## 内容 / Contents
 
-- `paper_artifacts/release_20260614/`: 发布版论文、新闻稿、仓库说明 Word 文件和 manifest。
+- `paper_artifacts/release_20260614/`: 发布版短主文、长篇技术报告、新闻稿、仓库说明 Word/PDF 文件和 manifest。
 - `outputs/`: AP-Core、GL、第三方复现、public freeze、clean-room rerun 的精选输出。
 - `docs/`: 复现报告、第三方审计报告、baseline 对照和最终汇总。
 - `.ap.zip`: 第三方提供的 `.ap` artifact 压缩包副本。
